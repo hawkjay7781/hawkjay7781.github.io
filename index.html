@@ -1,114 +1,520 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>MyPortfolio</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="bstutstyle01.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    
+    
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white p-2">
-		<img src="./image/po01.jpg" class="float-left rounded-circle mr-4" style="width: 60px; height: 65px">
-		<a class="navbar-brand" href="#">Navbar</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
 
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    <ul class="navbar-nav mr-auto">
-	      <li class="nav-item active">
-	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item active">
-	        <a class="nav-link" href="#">The Team <span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item active">
-	        <a class="nav-link" href="#">Projects <span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item active">
-	        <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
-	      </li>
-	      
-	      <li class="nav-item active dropdown">
-	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          More
-	        </a>
-	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	          <a class="dropdown-item" href="#">Merchandise</a>
-	          <a class="dropdown-item" href="#">Media</a>
-	          <div class="dropdown-divider"></div>
-	          <a class="dropdown-item" href="#">Extras</a>
-	        </div>
-	      </li>
-	      <li class="nav-item active">
-	        <a class="nav-link" href="#">Member</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link disabled" href="#">Disabled</a>
-	      </li>
-	    </ul>
-	    <form class="form-inline my-2 my-lg-0">
-	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-	      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-	    </form>
-	  </div>
-	</nav>
+                <div class="d-inline-flex p-1 sticky"><span style="cursor:pointer" onclick="openNav()"><img src="./images/menu.png" style="height: 35px; width: 35px"></span></div>
 
-		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-			    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-	  		</ol>
+                <div class="d-inline-flex p-1 text-secondary" style="margin-left: 400px; margin-bottom: 15px; margin-top:15px"><h1 class="font-weight-normal">WARRIOR FOR HIRE</h1></div>
+                <div class="d-inline-flex p-1" style="margin-left: 400px"><a href="https://www.google.com/" target="_blank"><span><img src="./images/search.png" style="height: 25px; width: 25px; margin-top: 15px"></span></a></div>
 
-	  		<div class="carousel-inner">
 
-	  			<div class="carousel-item active">
-	  				<img class="d-block w-100" src="./image/po02.jpg" alt="First slide" style="height: 612px; width: auto;">
-	  				<div class="carousel-caption d-none d-md-block">
-	  					<h5 class="text-white">The Dragon Warriors</h5>
-	  					<p class="text-white">Meet the team of Warriors in action</p>
-	  				</div>
-	  			</div>
 
-	  			<div class="carousel-item">
-	  				<img class="d-block w-100" src="./image/po03.jpg" alt="First slide" style="height: 612px; width: auto;">
-	  				<div class="carousel-caption d-none d-md-block">
-	  					<h5 class="text-dark">The Dragon Warriors</h5>
-	  					<p class="text-dark">Trailer Promotion Photo-shoot</p>
-	  				</div>
-	  			</div>
 
-	  			<div class="carousel-item">
-	  				<img class="d-block w-100" src="./image/po06.jpg" alt="First slide" style="height: 612px; width: auto;">
-	  				<div class="carousel-caption d-none d-md-block">
-	  					<h5 class="text-white">The Dragon Warriors</h5>
-	  					<p class="text-white">Secrets of the Dragon Scroll Reveiled</p>
-	  				</div>
-	  			</div>
 
-	  		</div>
+                        <!--Side Navigation for Menu-->
 
-	  		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-	  			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	  			<span class="sr-only">Previous</span>
-	  			</a>
+        <div id="sideNavStyle" class="side-nav">
+            <a href="javascript:void(0)" class="close-button"
+            onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#warrior">Warriors</a>
+            <a href="#mission">Mission</a>
+            <a href="#contact">Contact</a>
+                                                        <!--Dropdown-->
 
-	  		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-	  			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-	  			<span class="sr-only">Next</span>
-	  		</a>
-	  	</div>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Member <span class="caret"></span></a>
+                    <ul class="dropdown-menu" style="background: rgba(17, 17, 17, 0.8); z-index: 2">
+                        <li><a href="#" style="font-size: 20px" data-toggle="modal" data-target="#signIn">Sign In</a>
+                        <li><a href="#" style="font-size: 20px" data-toggle="modal" data-target="#signUp">Sign Up</a>
+                        <li><a href="https://uk.yahoo.com/" style="font-size: 20px">Sign Out</a></li>
+                    </ul>
+        </div>
+      
+                                                    <!-- Modal Sign In-->
+                        <div class="modal fade" id="signIn" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <input type="userid" class="form-control" id="userid" placeholder="Userid" name="userid">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="password" class="form-control" id="pwd" placeholder="Password" name="pwd">
+                                                </div>
+                                                <div class="d-flex justify-content-center">
+                                                    <button type="submit" class="btn btn-outline-dark text-center" style="margin-bottom: 30px" >Sign In
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                                             <!-- Modal Sign Up-->                
+
+                            <div class="modal fade" id="signUp" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <input type="firstlastName" class="form-control" id="firstlastName" placeholder="Name" name="firstlastNamee">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="country" class="form-control" id="country" placeholder="Country" name="country">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="userid" class="form-control" id="user-id" placeholder="Create Userid" name="userid">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="password" class="form-control" id="pwd" placeholder="Create Password" name="pwd">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="password" class="form-control" id="pwd" placeholder="Reconfirm Password" name="pwd">
+                                                </div>
+                                                <div class="d-flex justify-content-center">
+                                                    <button type="submit" class="btn btn-outline-dark text-center" style="margin-bottom: 30px" >Sign Up
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
 
 
 
 
 
+                                    <!-- Intro Carousel-->
 
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./images/po02.jpg" alt="First slide" style="height: 600px; width: auto;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-white">The Dragon Warriors</h5>
+                        <p class="text-white">Meet the team of Warriors in action</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/po03.jpg" alt="First slide" style="height: 600px; width: auto;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-dark">The Dragon Warriors</h5>
+                        <p class="text-dark">Promotion Photo-shoot</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/po06.jpg" alt="First slide" style="height: 600px; width: auto;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-white">The Dragon Warriors</h5>
+                        <p class="text-white">Sacred Mission Read-out</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+                                <!--The Team-->
+
+    <div class="container text-center" id="warrior" style="height: 1500px; background-color: white">
+        <div style="height: 50px"></div>
+        <h3>The Warriors</h3>
+        <p><em>At your service anytime, anywhere............... in China</em></p>
+        <br>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="#collapseExample" data-toggle="collapse">
+                <img src="./images/shifu.jpg" alt="shifu" style="width: 300px; height: 360px">
+                </a>
+                <div id="collapseExample" class="collapse">
+                    <p>Master Shifu is trainer to all the great kung fu warriors in all of China, including the Furious Five. Though small, Shifu is a powerhouse, exerting maximum force with minimal effort, exemplified by his signature move, the Wuxi Finger Hold, which overpowers an opponent with the touch of a finger. Shifu’s elusiveness borders on the mystical. He’s capable of appearing where he’s least expected within the blink of an eye.</p>
+                </div>
+
+                <p class="text-center"><strong>Master Shifu</strong></p><br>
+            </div>
+
+            <div class="col-sm-4">
+                
+                <a href="#xx" data-toggle="collapse">
+                    <img src="./images/po.jpg" alt="po" style="width: 300px; height: 360px">
+                </a>
+                <div id="xx" class="collapse">
+                    <p>Plucked from his duties as the apprentice noodle maker at his dad’s shop, Po is now the legendary Dragon Warrior, and, he’s already saved the world a few times. The traditional styles of Kung Fu aren’t a good fit for a six-foot-two-inch, 260 pound panda. Shifu discovers that for Po to become the Dragon Warrior, he must embrace Po’s inherent panda nature an exploit his physical attributes... including his generous belly and rear end. In the end, Po creates his own style that uses his perceived weaknesses as his strengths</p>
+                </div>
+                <p class="text-center"><strong>Po</strong></p><br>
+            </div>
+
+            <div class="col-sm-4">
+                
+                <a href="#demo3" data-toggle="collapse">
+                    <img src="./images/tigress.jpg" alt="tigress" style="width: 300px; height: 360px">
+                </a>
+                <div id="demo3" class="collapse">
+                    <p>Master Tigress is the strongest and boldest of the Furious Five. Tigress is powerful, strong, firm and aggressive. She strikes directly without hesitation, utilizing speed, agility and power to shatter opponents’ defenses. Tigress stays close to the ground; she is agile, acrobatic, elegant, fighting honorable, never using her claws.</p>
+                </div>
+                <p class="text-center"><strong>Tigress</strong></p><br>
+            </div>
+
+
+            <div class="col-sm-3">
+                
+                <a href="#demo4" data-toggle="collapse">
+                <img src="./images/crane.jpg" alt="crane" style="width: 200px; height: 220px"">
+                </a>
+                <div id="demo4" class="collapse">
+                    <p>Master Crane is the pragmatist of the group. Reluctant to resort to violence, he’s a “think first, punch second” kind of bird.  Crane’s fighting style is natural, graceful, effortless, fluid, and balanced. Crane utilizes his wings for big, circular sweeping movements designed to exploit his wingspan; by enlarging the striking zone, he diffuses his opponents’ energy. He is a master of deflecting any attack.</p>
+                </div>
+                <p class="text-center"><strong>Crane</strong></p><br>
+            </div>
+
+
+
+            <div class="col-sm-3">
+               
+                <a href="#demo5" data-toggle="collapse">
+                    <img src="./images/mantis.jpg" alt="mantis" style="width: 200px; height: 220px">
+                </a>
+                <div id="demo5" class="collapse">
+                    <p>Master Mantis may be the smallest of the Five. His size and incredible speed make him nearly invisible to opponents, an advantage that he uses to great effect. In addition, Mantis also possesses enormous strength, far more than his tiny size would imply. His powerful, high leaping rear legs and raptorial forelegs are used as defensive weapons. Mantis is known throughout China for his devastating “acupuncture attack”, which can render a foe immobile</p>
+                </div>
+
+                 <p class="text-center"><strong>Mantis</strong></p><br>
+            </div>
+
+            <div class="col-sm-3">
+                
+                <a href="#demo6" data-toggle="collapse">
+                    <img src="./images/viper.jpg" alt="viper" style="width: 200px; height: 220px">
+                </a>
+                <div id="demo6" class="collapse">
+                    <p>Master Viper is the "mother hen" of the group. It takes a cool head and a warm heart to manage the sometimes conflicting personalities of the Furious Five. But don't let her gentle nature fool you. Master Viper is a lightning fast warrior capable of taking down the most intimidating foe. Her power lies in her strength, her sinuous nature, her precision and deadly strikes.</p>
+                </div>
+                <p class="text-center"><strong>Viper</strong></p><br>
+            </div>
+
+            <div class="col-sm-3">
+                
+                <a href="#demo7" data-toggle="collapse">
+                    <img src="./images/monkey.jpg" alt="viper" style="width: 200px; height: 220px">
+                </a>
+                <div id="demo7" class="collapse">
+                    <p>Mischievous, playful and enthusiastic, Master Monkey likes a good joke, but his easy-going attitude masks cunning martial arts ability. More street smart than the rest of the Furious Five, Monkey is an unpredictable prankster who is as fierce as he is clever and funny. With his distinctive style of kung fu fighting, Monkey’s unpredictable moves and unique personality always keeps his attackers guessing. Monkey’s style is acrobatic, playful, comical, unpredictable, quick, and energetic.</p>
+                </div>
+                <p class="text-center"><strong>Monkey</strong></p><br>
+            </div>
+
+
+        </div>
+    </div>
+
+                        <!--Past Mission-->
+
+<div class="container-fluid text-center" id= "mission" style="background-color: black; color: white; height: 700px">
+            <div style="height: 50px"></div>
+            <h3>Past Missions</h3>
+            <p><em>We kicked their ass real good</em></p>
+            <br>
+                                                <!--Gallery Item-->
+                <div class="container-fluid">
+                    <div class="row" style="margin-top: 60px">
+                        <ul class="gallery">
+                            <li class="gallery-item">
+                                <img src="./images/tailung.jpg" data-toggle="modal" data-target="#taiModal">
+                                <p class="caption">Tai Lung</p>
+                            </li>
+                            <li class="gallery-item">
+                                <img src="./images/Shen.jpg" data-toggle="modal" data-target="#shenModal">
+                                <p class="caption">Lord Shen</p>
+                            </li>
+                            <li class="gallery-item">
+                                <img src="./images/kai.jpg" data-toggle="modal" data-target="#kaiModal">
+                                <p class="caption">Kai</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                                        <!--Gallery Tai Modal-->
+            <div class="modal fade" id="taiModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+
+                    <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle" style="color: grey">Tai Lung the Terrorist</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+
+
+                                    <div class="modal-body" style="background-color: grey">
+                                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                                            </ol>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">   
+                                                    <img src="./images/0101.jpg" alt="flyingKick" style="width: 1000px; height:400px">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="./images/0102.jpg" alt="tigressConfront" style="width: 1000px; height:400px">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="./images/0103.jpg" alt="nip01" style="width: 1000px; height:400px">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="./images/0104.jpg" alt="taiDefeat" style="width: 1000px; height:400px">
+                                                </div>
+                                            </div>
+                                                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+
+                                                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+
+                                        </div>
+                                    </div>
+
+
+                    <div class="modal-footer" style="background-color: white">
+                        <p style="text-align: left;">Tai Lung is his own biggest fan. Once upon a time, everyone believed that he was the greatest fighter ever – no one more than the cocky snow leopard himself. When denied the recognition he desired, Tai Lung revealed his dark heart, rampaged through the Valley and landed in lockdown in the inescapable Chorh-Gom Prison for the past 20 years. There, Tai Lung bides his time, waiting for his chance to escape and finish the battle he started 20 years ago. He escaped and the terror began.</p>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+
+                                            <!--Gallery Shen Modal-->
+
+            <div class="modal fade" id="shenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+
+                    <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle" style="color: grey">Lord Shen the Destroyer</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+
+
+                                    <div class="modal-body" style="background-color: grey">
+                                        <div id="myCarousel02" class="carousel slide" data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#myCarousel02" data-slide-to="0" class="active"></li>
+                                                <li data-target="#myCarousel02" data-slide-to="1"></li>
+                                                <li data-target="#myCarousel02" data-slide-to="2"></li>
+                                                <li data-target="#myCarousel02" data-slide-to="3"></li>
+                                            </ol>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">   
+                                                    <img src="./images/0201.jpg" alt="flyingKick" style="width: 1000px; height:400px">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="./images/0202.jpg" alt="tigressConfront" style="width: 1000px; height:400px">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="./images/0203.jpg" alt="nip01" style="width: 1000px; height:400px">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="./images/0204.jpg" alt="taiDefeat" style="width: 1000px; height:400px">
+                                                </div>
+                                            </div>
+                                                <a class="carousel-control-prev" href="#myCarousel02" role="button" data-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+
+                                                <a class="carousel-control-next" href="#myCarousel02" role="button" data-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+
+                                        </div>
+                                    </div>
+
+
+                    <div class="modal-footer" style="background-color: white">
+                        <p style="text-align: left;">Hyper intelligent, supremely lethal, and burning with ambition, Lord Shen’s past forged in him the notion that he’d been wronged and that the world owed him something. He intended to do everything in his power to take it, which included inventing a weapon unlike anything the world had ever seen. His intent – to wipe out kung fu and take over China. This ambition put him on a head to head path with a certain black and white Dragon Warrior named Po.</p>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+
+
+                                        <!--Gallery Kai Modal-->
+
+            <div class="modal fade" id="kaiModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+
+                    <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle" style="color: grey">Kai the Possessor</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+
+
+                                    <div class="modal-body" style="background-color: grey">
+                                        <div id="myCarousel03" class="carousel slide" data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#myCarousel03" data-slide-to="0" class="active"></li>
+                                                <li data-target="#myCarousel03" data-slide-to="1"></li>
+                                                <li data-target="#myCarousel03" data-slide-to="2"></li>
+                                                <li data-target="#myCarousel03" data-slide-to="3"></li>
+                                            </ol>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">   
+                                                    <img src="./images/0301.jpg" alt="flyingKick" style="width: 1000px; height:400px">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="./images/0302.jpg" alt="tigressConfront" style="width: 1000px; height:400px">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="./images/0303.jpg" alt="nip01" style="width: 1000px; height:400px">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="./images/0304.jpg" alt="taiDefeat" style="width: 1000px; height:400px">
+                                                </div>
+                                            </div>
+                                                <a class="carousel-control-prev" href="#myCarousel03" role="button" data-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+
+                                                <a class="carousel-control-next" href="#myCarousel03" role="button" data-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+
+                                        </div>
+                                    </div>
+
+
+                    <div class="modal-footer" style="background-color: white">
+                        <p style="text-align: left;">Long ago, the fearsome and power-hungry warrior Kai found a way to take chi from others, until he was banished to the Spirit Realm for all eternity. Now, Kai has returned to earth, where his appetite for power and revenge leads to an incredible showdown and battle with Po.</p>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+</div>
+
+                                                    <!--End of Mission-->
+
+
+    
+                                                    <!--Contact--->
+
+<div class="container" id="contact">
+        <div style="height: 50px"></div>
+    <h3 id="contact" style="text-align: center;">Contact</h3>
+    <p class="text-center"><em>We will put up a good fight</em></p>
+
+        <div class="row">
+            <div class="col-md-4">
+                <p>Contact us for rates.</p>
+                <p>Jade Palace, Valley of Peace, China</p>
+                <p>Phone: +86 555-WARRIOR</p>
+                <p>Email: dragonwarriors@chinamail.com</p>
+            </div>
+
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+
+                    <div class="col-sm-10 form-group">
+                        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5" required></textarea>
+                    </div>
+
+
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <button class="btn pull-right" type="submit">Send</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+</div>
+
+            <!-- Footer-->
+
+    <div class="container-fluid text-center bg-dark text-light" style="height: 100px">
+        <footer class="text-center">
+            <p style="font-family: Times New Roman, Times, serif; font-size: 15px"><i></i></p>
+      
+            <p>Powered By: <a href="https://www.w3schools.com" data-toggle="tooltip" target="-blank">W3School</a>
+                <a href="https://www.nextacademy.com/" data-toggle="tooltip" target="-blank">NextAcademy</a>
+                <a href="https://getbootstrap.com/" data-toggle="tooltip" target="-blank">Bootstrap</a>
+            </p> 
+
+            <p style="font-family: Times New Roman, Times, serif; font-size: 15px"><i>This website is purely for educational purposes with no commercial intent. Image and content credit : wikia, disney, dremworks, youtube, wikipedia and a few others</i></p>
+        </footer>
+    </div>
+
+
+<script src="./script.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+
 </body>
 </html>
+
