@@ -1,0 +1,27 @@
+h1 {
+	color: blue;
+}
+
+#list-data li {
+	display: inline-block;
+	max-width: 200px;
+}
+
+ul li {
+	display: inline-block;
+	margin-right: 8px;
+	margin-bottom: 8px;
+}
+
+li img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+button {
+	background-color: grey;
+	color: white;
+	padding: 16px;
+	font-size: 24px;
+	text-transform: uppercase;
+}
