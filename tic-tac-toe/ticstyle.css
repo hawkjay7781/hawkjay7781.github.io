@@ -1,0 +1,36 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  padding: 2px;
+  text-align: center;
+  font-size: 50px; 
+  font-family: Arial; 
+  height: 60px;
+  width: 60px;
+}
+
+tr {
+  height: 100px;
+}
+
+
+tr, td {
+    border: 2px solid black;
+}
+
+.t3 {
+  width:300px; 
+  border: 2px solid black; 
+  margin: auto;
+}
+
+button {
+  margin: auto;
+}
+img {
+  height: 60px;
+  width: 60px;
+}
